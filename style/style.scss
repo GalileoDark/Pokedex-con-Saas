@@ -1,0 +1,193 @@
+@use 'datos';
+@use 'tipos';
+@use 'fuente' as body;
+
+
+.logo{
+    content: url('../img/logo.png');
+    height: 55px;
+    width: 55px;
+}
+body {
+    background-image: url("../img/background0.png");
+}
+#modo-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: rgb(145, 2, 2);
+    border: none;
+}
+.boton{
+    height: 100%;
+    width: 100%;
+
+}
+.navbar {
+    background-color: rgb(255, 51, 51) !important;
+}
+.navbar .nav-link{
+    font-family: Arial, serif;
+    font-size: larger;
+    font-weight: 900;
+    color: white !important;
+}
+
+
+// Clase para cambiar el fondo con JavaScript
+.modo-nocturno {
+    background-image: url("../img/background1.png");
+}
+
+@media screen {
+    
+}
+.contenedor{
+    margin-top: 1%;
+}
+.contenedorDescripcion{
+    background-image: url('../img/background1.png');
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto; /* Dos filas ajustables */
+    gap: 10px; /* Espaciado entre divs */
+    margin : 10%;
+    grid-template-areas:
+        "numeroPokedex nombre nombre nombre"
+        "imagen imagen descripcion descripcion"
+        "tipos tipos descripcion descripcion";
+    text-align: center ;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+}
+
+@for $i from 1 through 251 {
+    .item#{$i}{
+        @if #{map-get(map-get(datos.$datos, $i), tipo2)} == ""{
+        background-color:  map-get(tipos.$tipos, #{map-get(map-get(datos.$datos, $i), tipo1)});
+        } @else{
+            background: linear-gradient(to right, map-get(tipos.$tipos, #{map-get(map-get(datos.$datos, $i), tipo1)}) 0%,
+            map-get(tipos.$tipos, #{map-get(map-get(datos.$datos, $i), tipo1)}) 40%,
+            map-get(tipos.$tipos, #{map-get(map-get(datos.$datos, $i), tipo2)}) 60%,
+            map-get(tipos.$tipos, #{map-get(map-get(datos.$datos, $i), tipo2)}) 100%);
+        }
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .imagen#{$i}::after {
+        content: url('../img/#{$i}.png');
+        height: 215px;
+        width: 215px;
+    }
+    .nombre#{$i}::after {
+        content: map-get(map-get(datos.$datos, $i), nombre);
+        @if #{map-get(map-get(datos.$datos, $i), tipo1)} == "electrico" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "electrico" {
+            color: black;
+        }@else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "volador" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "volador" {
+            color: black;
+        }
+        @else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "tierra" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "tierra" {
+            color: black;
+        }
+        @else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "normal" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "normal" {
+            color: black;
+        }
+        @else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "hada" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "hada" {
+            color: black;
+        }@else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "bicho" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "bicho" {
+            color:  black;
+        }
+        @else if #{map-get(map-get(datos.$datos, $i), tipo1)} == "hielo" or #{map-get(map-get(datos.$datos, $i), tipo2)} == "hielo" {
+            color: black;
+        }
+        @else{
+            color: black;
+        }
+        font-weight: bolder;
+        width: 100%;
+        font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:"wdth" 100;
+        justify-content: center;
+    }
+
+    .tipo1#{$i}::after{
+        content: url('../tipo/#{map-get(map-get(datos.$datos, $i), tipo1)}.png');
+        object-fit: cover;
+    }
+    .tipo2#{$i}::after{
+        content: url('../tipo/#{map-get(map-get(datos.$datos, $i), tipo2)}.png');
+    }
+    .descripcion#{$i}::after{
+        content: map-get(map-get(datos.$datos, $i), descripcion);
+        font-family: Arial, serif;
+        font-size: larger;
+        font-weight: 900;
+        color: white;
+        justify-content: center;
+        grid-area: descripcion;
+    }
+        /* Aqui las cosas de la descripción del pokemon */
+    .contenedorDescripcion{
+        border: 1px solid black;
+    }
+    .nombre#{$i}Descripcion::after{
+        content: map-get(map-get(datos.$datos, $i), nombre);
+        font-weight: bolder;
+        width: 100%;
+        font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:"wdth" 100;
+        justify-content: center;
+    }
+    .imagen#{$i}Descripcion::after{
+            content: url('../img/#{$i}.png');
+            height: 215px;
+            width: 215px;
+    }
+    .numeroPokedex{
+        font-family: Arial, serif;
+        font-size: larger;
+        font-weight: 900;
+        color: white;
+        grid-area: numeroPokedex;
+        justify-content: center;
+    }
+    .nombre{
+        grid-area: nombre;
+        font-family: Arial, serif;
+        font-size: larger;
+        font-weight: 900;
+        color: white;
+        justify-content: center;
+    }
+    .item{
+        grid-area: imagen;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+    }
+    .descripcion{
+        grid-area: descripcion;
+    }
+    .tipos{
+        grid-area: tipos;
+        justify-content: center;
+
+    }
+        
+}
+  
