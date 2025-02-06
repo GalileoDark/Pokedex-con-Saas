@@ -1,0 +1,1507 @@
+$datos : (
+    1:(
+        nombre: "Bulbasur",
+        tipo1: "planta",
+        tipo2: "veneno",
+        descripcion : "Una rara semilla fue plantada en su espalda al nacer. La planta brota y crece con este Pokémon"
+    ),
+    2:(
+        nombre: "Ivysaur",
+        tipo1: "planta",
+        tipo2: "veneno",
+        descripcion : "Cuando el bulbo de su espalda crece, parece no poder ponerse de pie sobre sus patas traseras."
+    ),
+    3:(
+        nombre: "Venasaur",
+        tipo1: "planta",
+        tipo2: "veneno",
+        descripcion: "La planta florece cuando absorbe energia solar. Esta le obliga a ponerse en busca de luz solar."
+    ),
+    4:(
+        nombre: "Charmander",
+        tipo1: "fuego",
+        tipo2: "",
+        descripcion: "Prefiere los sitios calientes. Dicen que cuando llueve sale vapor de la punta de su cola."
+    ),
+    5:(
+        nombre : "Charmeleon",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Al agitar su ardiente cola, eleva poco a poco la temperatura a su alrededor para sofocar a sus rivales."
+    ),
+    6:(
+        nombre : "Charizard",
+        tipo1 : "fuego",
+        tipo2 : "volador",
+        descripcion : "Cuando se enfurece de verdad, la llama de la punta de su cola se vuelve de color azul claro."
+    ),
+    7:(
+        nombre : "Squirtle",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Tras nacer, se le hincha el lomo y se le forma un caparazón. Escupe poderosa espuma por la boca."
+    ),
+    8:(
+        nombre : "Wartortle",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Tiene una cola larga y peluda que simboliza la longevidad y lo hace popular entre los mayores."
+    ),
+    9:(
+        nombre : "Blastoise",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Aumenta de peso deliberadamente para contrarrestar la fuerza de los chorros de agua que dispara."
+    ),
+    10:(
+        nombre : "Caterpie",
+        tipo1 : "bicho",
+        tipo2 : "",
+        descripcion : "Para protegerse, despide un hedor horrible por las antenas con el que repele a sus enemigos."
+    ),
+    11:(
+        nombre : "Metapod",
+        tipo1 : "bicho",
+        tipo2 : "",
+        descripcion : "Como en este estado solo puede endurecer su coraza, permanece inmóvil a la espera de evolucionar."
+    ),
+    12:(
+        nombre : "Butterfree",
+        tipo1 : "bicho",
+        tipo2 : "volador",
+        descripcion : "Adora el néctar de las flores. Una pequeña cantidad de polen le basta para localizar prados floridos."
+    ),
+    13:(
+        nombre : "Weedle",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "El aguijón de la cabeza es muy puntiagudo. Se alimenta de hojas oculto en la espesura de bosques y praderas."
+    ),
+    14:(
+        nombre : "Kakuna",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "Aunque es casi incapaz de moverse, en caso de sentirse amenazado puede envenenar a los enemigos con su aguijón."
+    ),
+    15:(
+        nombre : "Beedrill",
+        tipo1 : "bicho",
+        tipo2 : "volador",
+        descripcion : "Tiene tres aguijones venenosos, dos en las patas anteriores y uno en la parte baja del abdomen, con los que ataca a sus enemigos una y otra vez."
+    ),
+    16:(
+        nombre : "Pidgey",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Su docilidad es tal que suelen defenderse levantando arena en lugar de contraatacar."
+    ),
+    17:(
+        nombre : "Pidgeotto",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Su extraordinaria vitalidad y resistencia le permiten cubrir grandes distancias del territorio que habita en busca de presas."
+    ),
+    18:(
+        nombre : "Pidgeot",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Este Pokémon vuela a una velocidad de 2 mach en busca de presas. Sus grandes garras son armas muy peligrosas."
+    ),
+    19:(
+        nombre : "Rattata",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Es propenso a hincar los incisivos en cualquier cosa que se le ponga por delante. Si se ve alguno, seguramente haya cuarenta cerca."
+    ),
+    20:(
+        nombre : "Raticate",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Gracias a las pequeñas membranas de las patas traseras, puede nadar por los ríos para capturar presas."
+    ),
+    21:(
+        nombre : "Spearow",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "A la hora de proteger su territorio, compensa su incapacidad para volar a gran altura con una increíble velocidad."
+    ),
+    22:(
+        nombre : "Fearow",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Este Pokémon ha existido desde tiempos remotos. Al menor atisbo de peligro, alza el vuelo y huye."
+    ),
+    23:(
+        nombre : "Ekans",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "Puede desencajar la mandíbula libremente para engullir grandes presas, aunque esto le dificulte el movimiento por pesar demasiado."
+    ),
+    24:(
+        nombre : "Arbok",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "El dibujo que tiene en el vientre parece una cara terrorífica. Los rivales más débiles salen huyendo nada más verlo."
+    ),
+    25:(
+        nombre : "Pikachu",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Cuando se enfada, este Pokémon descarga la energía que almacena en el interior de las bolsas de las mejillas."
+    ),
+    26:(
+        nombre : "Raichu",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Su cola actúa como toma de tierra y descarga electricidad al suelo, lo que le protege de los calambrazos."
+    ),
+    27:(
+        nombre : "Sandshrew",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Excava madrigueras profundas en las que vive. Cuando lo ataca algún enemigo, se hace una bola y aguanta pacientemente sus embates."
+    ),
+    28:(
+        nombre : "Sandslash",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Corre de un lado a otro a toda velocidad al tiempo que ataca hábilmente con las púas que tiene en la espalda y con sus afiladas garras."
+    ),
+    29:(
+        nombre : "Nidoran♀",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "Posee un olfato más fino que los Nidoran♂. Usa los bigotes para percibir la dirección del viento y buscar comida a sotavento de sus depredadores."
+    ),
+    30:(
+        nombre : "Nidorina",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "Se cree que el cuerno de la frente se le ha atrofiado para evitar herir a sus crías al alimentarlas"
+    ),
+    31:(
+        nombre : "Nidoqueen",
+        tipo1 : "veneno",
+        tipo2 : "tierra",
+        descripcion : "Su defensa destaca sobre la capacidad ofensiva. Usa las escamas del cuerpo como una coraza para proteger a su prole de cualquier ataque."
+    ),
+    32:(
+        nombre : "Nidoran♂",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "Mantiene sus grandes orejas levantadas, siempre alerta. Si advierte peligro, ataca inoculando una potente toxina con su cuerno frontal."
+    ),
+    33:(
+        nombre : "Nidorino",
+        tipo1 : "veneno",
+        tipo2 : "",
+        descripcion : "Dondequiera que va, parte rocas con su cuerno, más duro que un diamante, en busca de una Piedra Lunar."
+    ),
+    34:(
+        nombre : "Nidoking",
+        tipo1 : "veneno",
+        tipo2 : "tierra",
+        descripcion : "Una vez que se desboca, no hay quien lo pare. Solo se calma ante Nidoqueen, su compañera de toda la vida."
+    ),
+    35:(
+        nombre : "Clefairy",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "En las noches de luna llena, Clefairy de diversos lugares se reúnen para bailar bajo su luz, la cual los hace flotar"
+    ),
+    36:(
+        nombre : "Clefable",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "Se dice que este Pokémon emparentado con las hadas vive en zonas tranquilas en lo profundo de las montañas, ya que odia que lo vean."
+    ),
+    37:(
+        nombre : "Vulpix",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Si lo ataca un enemigo más fuerte que él, finge estar herido para confundirlo y huir en cuanto baja la guardia."
+    ),
+    38:(
+        nombre : "Ninetales",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Cuentan algunas leyendas que cada una de sus nueve colas posee su propio y único poder sobrenatural."
+    ),
+    39:(
+        nombre : "Jigglypuff",
+        tipo1 : "normal",
+        tipo2 : "hada",
+        descripcion : "Cuando le tiemblan sus redondos y adorables ojos, entona una melodía agradable y misteriosa con la que duerme a sus enemigos."
+    ),
+    40:(
+        nombre : "Wigglytuff",
+        tipo1 : "normal",
+        tipo2 : "hada",
+        descripcion : "Tiene un pelaje muy fino. Se recomienda no enfadarlo, o se inflará y golpeará con todo su cuerpo."
+    ),
+    41:(
+        nombre : "Zubat",
+        tipo1 : "veneno",
+        tipo2 : "volador",
+        descripcion : "Emite ondas ultrasónicas por la boca para escrutar el entorno, lo que le permite volar con pericia por cuevas angostas."
+    ),
+    42:(
+        nombre : "Golbat",
+        tipo1 : "veneno",
+        tipo2 : "volador",
+        descripcion : "Le encanta chuparles la sangre a los seres vivos. En ocasiones comparte la preciada colecta con otros congéneres hambrientos."
+    ),
+    43:(
+        nombre : "Oddish",
+        tipo1 : "planta",
+        tipo2 : "veneno",
+        descripcion : "Su nombre científico es Oddium viandantis. Se dice que, cuando cae la noche, puede llegar a desplazarse hasta 300 m con sus dos raíces."
+    ),
+    44:(
+        nombre : "Gloom",
+        tipo1 : "planta",
+        tipo2 : "veneno",
+        descripcion : "El fluido que le cae lentamente de la boca no es saliva, sino una especie de néctar que utiliza para atraer a sus presas."
+    ),
+    45:(
+        nombre : "Vileplume",
+        tipo1 : "planta",
+        tipo2 : "veneno",
+        descripcion : "El capullo florece de golpe con un chasquido, tras lo cual comienza a desprender un polen alergénico y venenoso."
+    ),
+    46:(
+        nombre : "Paras",
+        tipo1 : "bicho",
+        tipo2 : "planta",
+        descripcion : "Escarba en el suelo para extraer nutrientes de las raíces de los árboles, que las setas del lomo absorben después casi por completo."
+    ),
+    47:(
+        nombre : "Parasect",
+        tipo1 : "bicho",
+        tipo2 : "planta",
+        descripcion : "Tras largo tiempo absorbiendo la energía del huésped, la seta parásita del lomo es la que parece controlar la voluntad de este Pokémon."
+    ),
+    48:(
+        nombre : "Venonat",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "Rezuma veneno por todo su cuerpo. De noche, atrapa y come pequeños Pokémon insecto atraídos por la luz."
+    ),
+    49:(
+        nombre : "Venomoth",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "Tiene las alas cubiertas de escamas. Cada vez que las bate, esparce un polvillo sumamente venenoso."
+    ),
+    50:(
+        nombre : "Diglett",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Vive 1 m por debajo del suelo, donde se alimenta de raíces. A veces también aparece en la superficie."
+    ),
+    51:(
+        nombre : "Dugtrio",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Sus tres cabezas suben y bajan para remover la tierra cercana y facilitar así la excavación."
+    ),
+    52:(
+        nombre : "Meowth",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Durante el día, se dedica a dormir. De noche, vigila su territorio con un brillo en los ojos."
+    ),
+    53:(
+        nombre : "Persian",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Aunque es muy admirado por el pelaje, es difícil de entrenar como mascota porque enseguida suelta arañazos."
+    ),
+    54:(
+        nombre : "Psyduck",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Padece continuamente dolores de cabeza. Cuando son muy fuertes, empieza a usar misteriosos poderes."
+    ),
+    55:(
+        nombre : "Golduck",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Cuando nada a toda velocidad usando sus largas extremidades palmeadas, su frente comienza a brillar."
+    ),
+    56:(
+        nombre : "Mankey",
+        tipo1 : "lucha",
+        tipo2 : "",
+        descripcion : "Vive en grupos en las copas de los árboles. Si pierde de vista a su manada, se siente solo y se enfada."
+    ),
+    57:(
+        nombre : "Primeape",
+        tipo1 : "lucha",
+        tipo2 : "",
+        descripcion : "Se pone furioso si nota que alguien lo está mirando. Persigue a cualquiera que establezca contacto visual con él."
+    ),
+    58:(
+        nombre : "Growlithe",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "De naturaleza valiente y honrada, se enfrenta sin miedo a enemigos más grandes y fuertes."
+    ),
+    59:(
+        nombre : "Arcanine",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Cuenta un antiguo pergamino que la gente se quedaba fascinada al verlo correr por las praderas."
+    ),
+    60:(
+            nombre : "Poliwag",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su piel es tan fina que se le pueden ver los órganos internos. La espiral de su panza es en realidad su intestino."
+    ),
+    61:(
+            nombre : "Poliwhirl",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su piel segrega una sustancia viscosa que le permite escabullirse fácilmente de los ataques enemigos."
+    ),
+    62:(
+            nombre : "Poliwrath",
+            tipo1 : "agua",
+            tipo2 : "lucha",
+            descripcion : "Tiene unos músculos desarrollados y una resistencia física extraordinaria. Puede nadar sin descanso en mares agitados."
+    ),
+    63:(
+            nombre : "Abra",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Duerme 18 horas al día. Si siente peligro, usa Teletransporte incluso mientras duerme."
+    ),
+    64:(
+            nombre : "Kadabra",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Cuando era niño, un domador de poderes psiquicos despertó y se transformó en este Pokémon."
+    ),
+    65:(
+            nombre : "Alakazam",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Tiene un cerebro gigantesco y un coeficiente intelectual de 5000. No olvida nada de lo que aprende."
+    ),
+    66:(
+            nombre : "Machop",
+            tipo1 : "lucha",
+            tipo2 : "",
+            descripcion : "Su cuerpo pequeño esconde una fuerza descomunal. Es capaz de levantar a 100 personas sin esfuerzo."
+    ),
+    67:(
+            nombre : "Machoke",
+            tipo1 : "lucha",
+            tipo2 : "",
+            descripcion : "Su musculatura es tan fuerte que debe llevar un cinturón de fuerza para controlar su poder."
+    ),
+    68:(
+            nombre : "Machamp",
+            tipo1 : "lucha",
+            tipo2 : "",
+            descripcion : "Con sus cuatro brazos, puede lanzar una serie de golpes en un instante y sujetar a un enemigo con otro brazo."
+    ),
+    69:(
+            nombre : "Bellsprout",
+            tipo1 : "planta",
+            tipo2 : "veneno",
+            descripcion : "Su delgado cuerpo le permite balancearse en el viento y esquivar los ataques enemigos con facilidad."
+    ),
+    70:(
+            nombre : "Weepinbell",
+            tipo1 : "planta",
+            tipo2 : "veneno",
+            descripcion : "Se cuelga de las ramas de los árboles con su liana y se deja llevar por el viento mientras descansa."
+    ),
+    71:(
+            nombre : "Victreebel",
+            tipo1 : "planta",
+            tipo2 : "veneno",
+            descripcion : "Su boca enorme puede tragar a presas enteras. Dentro de ella, un ácido digestivo muy fuerte las descompone."
+    ),
+    72:(
+            nombre : "Tentacool",
+            tipo1 : "agua",
+            tipo2 : "veneno",
+            descripcion : "Flota en el mar como una medusa. Sus tentáculos contienen un veneno que causa un dolor intenso."
+    ),
+    73:(
+            nombre : "Tentacruel",
+            tipo1 : "agua",
+            tipo2 : "veneno",
+            descripcion : "Posee 80 tentáculos que pueden extenderse y contraerse. Puede atrapar a sus presas con facilidad."
+    ),
+    74:(
+            nombre : "Geodude",
+            tipo1 : "roca",
+            tipo2 : "tierra",
+            descripcion : "Le gusta vivir en caminos de montaña. A menudo los excursionistas lo confunden con una roca y tropiezan con él."
+    ),
+    75:(
+            nombre : "Graveler",
+            tipo1 : "roca",
+            tipo2 : "tierra",
+            descripcion : "Cuando baja rodando por una montaña, no hay nada que lo detenga. Puede aplastar todo a su paso."
+    ),
+    76:(
+            nombre : "Golem",
+            tipo1 : "roca",
+            tipo2 : "tierra",
+            descripcion : "Su cuerpo está completamente cubierto de una dura capa de roca. Puede resistir explosiones sin inmutarse."
+    ),
+    77:(
+            nombre : "Ponyta",
+            tipo1 : "fuego",
+            tipo2 : "",
+            descripcion : "Nace con patas débiles, pero con el tiempo se fortalecen y puede saltar edificios con facilidad."
+    ),
+    78:(
+            nombre : "Rapidash",
+            tipo1 : "fuego",
+            tipo2 : "",
+            descripcion : "Es increíblemente veloz. Puede alcanzar los 240 km/h y deja una estela de fuego a su paso."
+    ),
+    79:(
+            nombre : "Slowpoke",
+            tipo1 : "agua",
+            tipo2 : "psiquico",
+            descripcion : "Es tan lento que a veces olvida lo que estaba haciendo. Si le muerden la cola, puede tardar un día en notar el dolor."
+    ),
+    80:(
+            nombre : "Slowbro",
+            tipo1 : "agua",
+            tipo2 : "psiquico",
+            descripcion : "Un Shellder mordió su cola y no lo suelta. Ahora es incapaz de volver a ser un Slowpoke."
+    ),
+    81:(
+            nombre : "Magnemite",
+            tipo1 : "electrico",
+            tipo2 : "acero",
+            descripcion : "Genera un campo magnético que lo mantiene flotando en el aire. Se siente atraído por la electricidad."
+    ),
+    82:(
+            nombre : "Magneton",
+            tipo1 : "electrico",
+            tipo2 : "acero",
+            descripcion : "Es la combinación de tres Magnemite. Su poder magnético puede causar interferencias en dispositivos electrónicos."
+    ),
+    83:(
+            nombre : "Farfetch'd",
+            tipo1 : "normal",
+            tipo2 : "volador",
+            descripcion : "Siempre lleva un puerro consigo. Lo usa como arma en combate y lo cuida con gran aprecio."
+    ),
+    84:(
+            nombre : "Doduo",
+            tipo1 : "normal",
+            tipo2 : "volador",
+            descripcion : "Tiene dos cabezas que piensan de manera independiente. Puede correr a gran velocidad incluso en terrenos difíciles."
+    ),
+    85:(
+            nombre : "Dodrio",
+            tipo1 : "normal",
+            tipo2 : "volador",
+            descripcion : "Cuando una de sus cabezas duerme, las otras dos se mantienen despiertas para vigilar los alrededores."
+    ),
+    86:(
+            nombre : "Seel",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su gruesa piel blanca le permite nadar en aguas heladas sin sentir frío. Le encanta jugar en el hielo."
+    ),
+    87:(
+            nombre : "Dewgong",
+            tipo1 : "agua",
+            tipo2 : "hielo",
+            descripcion : "Nada elegantemente en aguas gélidas. Puede nadar durante horas sin cansarse gracias a su gruesa capa de grasa."
+    ),
+    88:(
+            nombre : "Grimer",
+            tipo1 : "veneno",
+            tipo2 : "",
+            descripcion : "Surgió de los residuos de una planta industrial. Su cuerpo pegajoso deja un rastro de suciedad a su paso."
+    ),
+    89:(
+            nombre : "Muk",
+            tipo1 : "veneno",
+            tipo2 : "",
+            descripcion : "Su cuerpo está compuesto de un lodo tóxico. Su presencia contamina el agua y la tierra a su alrededor."
+    ),
+    90:(
+            nombre : "Shellder",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su caparazón es increíblemente duro. Aunque su cuerpo es blando, apenas se deja ver dentro de su concha."
+    ),
+    91:(
+            nombre : "Cloyster",
+            tipo1 : "agua",
+            tipo2 : "hielo",
+            descripcion : "Su caparazón es tan resistente que no puede ser dañado ni por explosiones. Solo se abre cuando ataca."
+    ),
+    92:(
+            nombre : "Gastly",
+            tipo1 : "fantasma",
+            tipo2 : "veneno",
+            descripcion : "Es un Pokémon hecho de gas. Puede atravesar paredes y envolver a sus presas con su cuerpo tóxico."
+    ),
+    93:(
+            nombre : "Haunter",
+            tipo1 : "fantasma",
+            tipo2 : "veneno",
+            descripcion : "Le encanta acechar en la oscuridad. Si te lame con su lengua gaseosa, sentirás un escalofrío aterrador."
+    ),
+    94:(
+            nombre : "Gengar",
+            tipo1 : "fantasma",
+            tipo2 : "veneno",
+            descripcion : "Se esconde en las sombras de la gente y les juega bromas pesadas. A veces se ríe de manera siniestra."
+    ),
+    95:(
+            nombre : "Onix",
+            tipo1 : "roca",
+            tipo2 : "tierra",
+            descripcion : "Su cuerpo está compuesto de grandes rocas. A medida que envejece, sus piedras se vuelven más lisas y resistentes."
+    ),
+    96:(
+            nombre : "Drowzee",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Si alguien ha dormido cerca de él, puede saber qué tipo de sueños tuvo. Le encanta devorar sueños agradables."
+    ),
+    97:(
+            nombre : "Hypno",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Usa su péndulo para hipnotizar a sus presas. Se dice que en ocasiones se lleva a niños mientras duermen."
+    ),
+    98:(
+            nombre : "Krabby",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Sus grandes pinzas son su mejor arma. Si pierde una, le vuelve a crecer con el tiempo."
+    ),
+    99:(
+            nombre : "Kingler",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su pinza izquierda es enorme y muy poderosa. Puede aplastar con facilidad incluso conchas duras."
+    ),
+    100:(
+            nombre : "Voltorb",
+            tipo1 : "electrico",
+            tipo2 : "",
+            descripcion : "Se asemeja a una Poké Ball. Su origen es un misterio, pero tiende a explotar al menor impacto."
+    ),
+    101:(
+            nombre : "Electrode",
+            tipo1 : "electrico",
+            tipo2 : "",
+            descripcion : "Acumula tanta electricidad que puede explotar en cualquier momento. Se siente atraído por fuentes de energía."
+    ),
+    102:(
+            nombre : "Exeggcute",
+            tipo1 : "planta",
+            tipo2 : "psiquico",
+            descripcion : "Está compuesto por seis huevos unidos telepáticamente. Si se separan, intentan reunirse de nuevo."
+    ),
+    103:(
+            nombre : "Exeggutor",
+            tipo1 : "planta",
+            tipo2 : "psiquico",
+            descripcion : "Cada una de sus cabezas piensa de forma independiente. Si una se cae, puede convertirse en un nuevo Exeggcute."
+    ),
+    104:(
+            nombre : "Cubone",
+            tipo1 : "tierra",
+            tipo2 : "",
+            descripcion : "Siempre lleva el cráneo de su madre fallecida. Se dice que llora en las noches al recordar su pérdida."
+    ),
+    105:(
+            nombre : "Marowak",
+            tipo1 : "tierra",
+            tipo2 : "",
+            descripcion : "Ha superado su tristeza y se ha vuelto fuerte. Usa su hueso como arma y es un experto en el combate."
+    ),
+    106:(
+            nombre : "Hitmonlee",
+            tipo1 : "lucha",
+            tipo2 : "",
+            descripcion : "Sus piernas pueden estirarse como resortes. Sus patadas son rápidas y poderosas, capaces de romper rocas."
+    ),
+    107:(
+            nombre : "Hitmonchan",
+            tipo1 : "lucha",
+            tipo2 : "",
+            descripcion : "Sus puños se mueven a una velocidad increíble. Cada puñetazo que lanza es tan veloz como una bala."
+    ),
+    108:(
+            nombre : "Lickitung",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Su lengua es más larga que su cuerpo. La usa para atrapar comida y detectar sabores con gran precisión."
+    ),
+    109:(
+            nombre : "Koffing",
+            tipo1 : "veneno",
+            tipo2 : "",
+            descripcion : "Flota en el aire gracias a los gases tóxicos dentro de su cuerpo. Si se agita demasiado, explota."
+    ),
+    110:(
+            nombre : "Weezing",
+            tipo1 : "veneno",
+            tipo2 : "",
+            descripcion : "Expele un hedor tóxico que puede provocar mareos. Suelen formarse cuando dos Koffing se fusionan."
+    ),
+    111:(
+            nombre : "Rhyhorn",
+            tipo1 : "tierra",
+            tipo2 : "roca",
+            descripcion : "Su cuerpo es tan duro como una roca. Corre en línea recta sin importar los obstáculos en su camino."
+    ),
+    112:(
+            nombre : "Rhydon",
+            tipo1 : "tierra",
+            tipo2 : "roca",
+            descripcion : "Su piel es resistente incluso a lava hirviendo. Puede derribar edificios de un solo golpe."
+    ),
+    113:(
+            nombre : "Chansey",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Es un Pokémon amable que comparte sus huevos nutritivos con los heridos y enfermos para ayudarlos a sanar."
+    ),
+    114:(
+            nombre : "Tangela",
+            tipo1 : "planta",
+            tipo2 : "",
+            descripcion : "Su cuerpo está cubierto de lianas azules. Si alguna se corta, le vuelve a crecer rápidamente."
+    ),
+    115:(
+            nombre : "Kangaskhan",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Protege ferozmente a su cría, que siempre lleva en su bolsa. Nunca ataca sin motivo."
+    ),
+    116:(
+            nombre : "Horsea",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Expulsa tinta negra para confundir a sus enemigos y huir. Nada contra la corriente con facilidad."
+    ),
+    117:(
+            nombre : "Seadra",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Sus púas contienen un veneno potente. Cuando se esconde entre corales, es casi imposible detectarlo."
+    ),
+    118:(
+            nombre : "Goldeen",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Nada con gracia en ríos y estanques. Su cuerno es fuerte y lo usa para defenderse si se siente amenazado."
+    ),
+    119:(
+            nombre : "Seaking",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Durante la temporada de apareamiento, los machos decoran su territorio con bellos patrones en las rocas."
+    ),
+    120:(
+            nombre : "Staryu",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Si pierde alguna de sus extremidades, puede regenerarla. Su núcleo rojo brilla con intensidad por las noches."
+    ),
+    121:(
+            nombre : "Starmie",
+            tipo1 : "agua",
+            tipo2 : "psiquico",
+            descripcion : "Emite señales misteriosas hacia el espacio. Su núcleo en forma de gema parpadea como una estrella."
+    ),
+    122:(
+            nombre : "Mr. Mime",
+            tipo1 : "psiquico",
+            tipo2 : "hada",
+            descripcion : "Crea paredes invisibles con sus mímicas. Sus habilidades lo hacen parecer un mago profesional."
+    ),
+    123:(
+            nombre : "Scyther",
+            tipo1 : "bicho",
+            tipo2 : "volador",
+            descripcion : "Se mueve a una velocidad increíble, pareciendo un espejismo. Sus afiladas cuchillas pueden cortar acero."
+    ),
+    124:(
+            nombre : "Jynx",
+            tipo1 : "hielo",
+            tipo2 : "psiquico",
+            descripcion : "Baila con movimientos hipnóticos que hacen que cualquiera que la observe comience a imitarla sin darse cuenta."
+    ),
+    125:(
+            nombre : "Electabuzz",
+            tipo1 : "electrico",
+            tipo2 : "",
+            descripcion : "Se reúne cerca de centrales eléctricas en busca de energía. Su piel genera electricidad estática al frotarse."
+    ),
+    126:(
+            nombre : "Magmar",
+            tipo1 : "fuego",
+            tipo2 : "",
+            descripcion : "Vive en cráteres volcánicos. Su cuerpo arde a temperaturas extremas, lo que lo hace difícil de acercar."
+    ),
+    127:(
+            nombre : "Pinsir",
+            tipo1 : "bicho",
+            tipo2 : "",
+            descripcion : "Sus poderosas mandíbulas pueden partir un tronco en dos. Prefiere vivir en zonas cálidas y húmedas."
+    ),
+    128:(
+            nombre : "Tauros",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Corre en manada embistiendo todo a su paso. Cuanto más furioso está, más salvajes son sus ataques."
+    ),
+    129:(
+            nombre : "Magikarp",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Es un Pokémon extremadamente débil que solo puede salpicar. Sin embargo, su resistencia es sorprendente."
+    ),
+    130:(
+            nombre : "Gyarados",
+            tipo1 : "agua",
+            tipo2 : "volador",
+            descripcion : "Cuando evoluciona, se vuelve agresivo y destructivo. Su ira es tan temida que puede arrasar ciudades enteras."
+    ),
+    131:(
+            nombre : "Lapras",
+            tipo1 : "agua",
+            tipo2 : "hielo",
+            descripcion : "Es un Pokémon amable que transporta a la gente sobre su espalda. Se dice que entiende el lenguaje humano."
+    ),
+    132:(
+            nombre : "Ditto",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Puede transformarse en cualquier cosa con exactitud. Sin embargo, a veces no logra copiar las expresiones faciales."
+    ),
+    133:(
+            nombre : "Eevee",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Tiene un código genético inestable, lo que le permite evolucionar en distintas formas dependiendo de su entorno."
+    ),
+    134:(
+            nombre : "Vaporeon",
+            tipo1 : "agua",
+            tipo2 : "",
+            descripcion : "Su cuerpo puede disolverse en agua. Se dice que aparece cuando las aguas están tranquilas y puras."
+    ),
+    135:(
+            nombre : "Jolteon",
+            tipo1 : "electrico",
+            tipo2 : "",
+            descripcion : "Su piel está cubierta de pequeñas agujas cargadas de electricidad. Puede lanzar potentes descargas en combate."
+    ),
+    136:(
+            nombre : "Flareon",
+            tipo1 : "fuego",
+            tipo2 : "",
+            descripcion : "Su pelaje esponjoso almacena calor. Puede exhalar llamas a más de 900 °C cuando está en combate."
+    ),
+    137:(
+            nombre : "Porygon",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Es un Pokémon creado completamente con código digital. Puede entrar en sistemas informáticos sin problema."
+    ),
+    138:(
+            nombre : "Omanyte",
+            tipo1 : "roca",
+            tipo2 : "agua",
+            descripcion : "Un Pokémon fósil que fue revivido. Se cree que usaba sus tentáculos para nadar en los mares prehistóricos."
+    ),
+    139:(
+            nombre : "Omastar",
+            tipo1 : "roca",
+            tipo2 : "agua",
+            descripcion : "Sus fuertes mandíbulas podían romper conchas de otros Pokémon. Se extinguió por el peso de su propio caparazón."
+    ),
+    140:(
+            nombre : "Kabuto",
+            tipo1 : "roca",
+            tipo2 : "agua",
+            descripcion : "Revivido a partir de un fósil. Permanece casi inmóvil en la arena esperando a su presa."
+    ),
+    141:(
+            nombre : "Kabutops",
+            tipo1 : "roca",
+            tipo2 : "agua",
+            descripcion : "Era un depredador ágil en los mares prehistóricos. Sus afiladas garras cortaban a su presa antes de devorarla."
+    ),
+    142:(
+            nombre : "Aerodactyl",
+            tipo1 : "roca",
+            tipo2 : "volador",
+            descripcion : "Un Pokémon feroz de la era de los dinosaurios. Se dice que su grito aterrador hacía temblar a sus presas."
+    ),
+    143:(
+            nombre : "Snorlax",
+            tipo1 : "normal",
+            tipo2 : "",
+            descripcion : "Pasa la mayor parte del día durmiendo. Solo se despierta para comer grandes cantidades de comida."
+    ),
+    144:(
+            nombre : "Articuno",
+            tipo1 : "hielo",
+            tipo2 : "volador",
+            descripcion : "Un Pokémon legendario que controla el hielo. Se dice que aparece en montañas nevadas y congela el aire a su alrededor."
+    ),
+    145:(
+            nombre : "Zapdos",
+            tipo1 : "electrico",
+            tipo2 : "volador",
+            descripcion : "Un legendario pájaro de trueno. Puede generar poderosos rayos al batir sus alas en tormentas eléctricas."
+    ),
+    146:(
+            nombre : "Moltres",
+            tipo1 : "fuego",
+            tipo2 : "volador",
+            descripcion : "Su cuerpo arde con intensas llamas. Se dice que su aparición marca el inicio de la primavera."
+    ),
+    147:(
+            nombre : "Dratini",
+            tipo1 : "dragon",
+            tipo2 : "",
+            descripcion : "Un Pokémon serpentino que crece constantemente. Vive en aguas profundas lejos de la vista de los humanos."
+    ),
+    148:(
+            nombre : "Dragonair",
+            tipo1 : "dragon",
+            tipo2 : "",
+            descripcion : "Su cuerpo emite una energía misteriosa. Se dice que puede controlar el clima con su aura."
+    ),
+    149:(
+            nombre : "Dragonite",
+            tipo1 : "dragon",
+            tipo2 : "volador",
+            descripcion : "Es un Pokémon bondadoso a pesar de su gran poder. Puede volar alrededor del mundo en tan solo 16 horas."
+    ),
+    150:(
+            nombre : "Mewtwo",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Fue creado mediante ingeniería genética para ser el Pokémon más fuerte. Su poder psiquico es inigualable."
+    ),
+    151:(
+            nombre : "Mew",
+            tipo1 : "psiquico",
+            tipo2 : "",
+            descripcion : "Se dice que contiene el ADN de todos los Pokémon. Es muy juguetón y solo aparece ante personas de buen corazón."
+    ),    152:(
+        nombre : "Chikorita",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Es un Pokémon de naturaleza tranquila. Su hoja en la cabeza tiene el poder de curar a otros Pokémon."
+    ),
+    153:(
+        nombre : "Bayleef",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Su aroma floral tiene efectos relajantes. Puede crear un campo de energía protectora."
+    ),
+    154:(
+        nombre : "Meganium",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Su cuerpo está rodeado por una fragancia que calma y sana a los Pokémon heridos. Es un líder natural."
+    ),
+    155:(
+        nombre : "Cyndaquil",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Cuando se siente en peligro, su espalda se cubre de llamas. Se esconde en su caparazón de fuego."
+    ),
+    156:(
+        nombre : "Quilava",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Con su agilidad y llamas intensas, puede atacar a gran velocidad. Sus llamas aumentan con su enojo."
+    ),
+    157:(
+        nombre : "Typhlosion",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Cuando se enfurece, sus llamas se hacen más intensas y su cuerpo se cubre de un fuego abrasador."
+    ),
+    158:(
+        nombre : "Totodile",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Es juguetón y le encanta morder todo lo que encuentra. Sus dientes afilados le permiten nadar rápidamente."
+    ),
+    159:(
+        nombre : "Croconaw",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Es más agresivo y territorial que su forma anterior. Puede nadar y moverse a gran velocidad."
+    ),
+    160:(
+        nombre : "Feraligatr",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Con su fuerza increíble, puede romper rocas y nadar a gran velocidad. Es un líder natural de su manada."
+    ),
+    161:(
+        nombre : "Sentret",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Es muy curioso y se para en dos patas para vigilar su entorno. Se mantiene alerta a cualquier peligro."
+    ),
+    162:(
+        nombre : "Furret",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Su largo cuerpo le permite moverse rápidamente entre los arbustos. Es extremadamente ágil."
+    ),
+    163:(
+        nombre : "Hoothoot",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Su cabeza siempre está girada 180 grados, lo que le permite vigilar a su alrededor. Es nocturno."
+    ),
+    164:(
+        nombre : "Noctowl",
+        tipo1 : "normal",
+        tipo2 : "volador",
+        descripcion : "Es un experto en volar en la oscuridad. Su aguda vista le permite detectar presas incluso a largas distancias."
+    ),
+    165:(
+        nombre : "Ledyba",
+        tipo1 : "bicho",
+        tipo2 : "volador",
+        descripcion : "Es un Pokémon amistoso que se agrupa con otros para formar enjambres. Tiene una vista muy aguda."
+    ),
+    166:(
+        nombre : "Ledian",
+        tipo1 : "bicho",
+        tipo2 : "volador",
+        descripcion : "Es rápido y ágil, puede esquivar ataques fácilmente. Usa sus alas para emitir luces brillantes."
+    ),
+    167:(
+        nombre : "Spinarak",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "Es un hábil tejedor. Su telaraña es extremadamente pegajosa y resistente. Siempre busca lugares soleados."
+    ),
+    168:(
+        nombre : "Ariados",
+        tipo1 : "bicho",
+        tipo2 : "veneno",
+        descripcion : "Es una araña venenosa que puede lanzar telarañas a gran distancia. Sus ojos son muy sensibles a los movimientos."
+    ),
+    169:(
+        nombre : "Crobat",
+        tipo1 : "veneno",
+        tipo2 : "volador",
+        descripcion : "Este Pokémon tiene una gran agilidad y puede moverse rápidamente gracias a sus enormes alas. Es la evolución final de Zubat."
+    ),
+    170:(
+        nombre : "Chinchou",
+        tipo1 : "agua",
+        tipo2 : "electrico",
+        descripcion : "Chinchou es conocido por emitir electricidad a través de sus antenas. Es capaz de iluminar su entorno oscuro con energía eléctrica."
+    ),
+    171:(
+        nombre : "Lanturn",
+        tipo1 : "agua",
+        tipo2 : "electrico",
+        descripcion : "Lanturn es conocido por su capacidad para emitir luz y electricidad a través de su cuerpo. Es una evolución de Chinchou."
+    ),
+    172:(
+        nombre : "Pichu",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Pichu es la preevolución de Pikachu. Aunque es pequeño y frágil, tiene una gran carga de electricidad que libera accidentalmente."
+    ),
+    173:(
+        nombre : "Cleffa",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "Cleffa es la preevolución de Clefairy. Se caracteriza por su aspecto tierno y su habilidad para atraer la atención de los demás."
+    ),
+    174:(
+        nombre : "Igglybuff",
+        tipo1 : "normal",
+        tipo2 : "hada",
+        descripcion : "Igglybuff es la preevolución de Jigglypuff. Su cuerpo es extremadamente suave y su canto puede ser encantador para los demás."
+    ),
+    175:(
+        nombre : "Togepi",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "Togepi es conocido por su capacidad para hacer feliz a la gente. Es la preevolución de Togetic."
+    ),
+    176:(
+        nombre : "Togetic",
+        tipo1 : "hada",
+        tipo2 : "volador",
+        descripcion : "Togetic es un Pokémon alegre que busca hacer felices a los demás. Es la evolución de Togepi."
+    ),
+    177:(
+        nombre : "Natu",
+        tipo1 : "psiquico",
+        tipo2 : "volador",
+        descripcion : "Natu es un pequeño pájaro que tiene una gran habilidad para ver el futuro. Puede predecir lo que ocurrirá a su alrededor."
+    ),
+    178:(
+        nombre : "Xatu",
+        tipo1 : "psiquico",
+        tipo2 : "volador",
+        descripcion : "Xatu tiene una vista sobrenatural y es capaz de ver el pasado y el futuro. Es la evolución de Natu."
+    ),
+    179:(
+        nombre : "Mareep",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Mareep es un Pokémon de tipo electrico con lana que puede generar electricidad. Es la preevolución de Flaaffy."
+    ),
+    180:(
+        nombre : "Flaaffy",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Flaaffy tiene una cola que genera electricidad. Es la evolución de Mareep."
+    ),
+    181:(
+        nombre : "Ampharos",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Ampharos tiene una gran habilidad para generar electricidad. Sus cuernos son muy poderosos y se utilizan como una fuente de energía."
+    ),
+    182:(
+        nombre : "Bellossom",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Bellossom es un Pokémon muy alegre que se dice que trae buena suerte. Es una evolución de Cherrim."
+    ),
+    183:(
+        nombre : "Marril",
+        tipo1 : "agua",
+        tipo2 : "hada",
+        descripcion : "Sus largas orejas son unos sensores excepcionales que le permiten diferenciar e identificar lo que oye dentro del agua."
+    ),
+     184:(
+        nombre : "Azumarill",
+        tipo1 : "agua",
+        tipo2 : "hada",
+        descripcion : "Azumarill es conocido por ser un Pokémon acuático con una gran capacidad para nadar. Es la evolución de Marill."
+    ),
+    185:(
+        nombre : "Sudowoodo",
+        tipo1 : "roca",
+        tipo2 : "",
+        descripcion : "Sudowoodo es un Pokémon que se disfraza de árbol para evitar ser detectado. Su cuerpo duro como la piedra lo hace resistente a los ataques."
+    ),
+    186:(
+        nombre : "Politoed",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Politoed es un Pokémon anfibio que emite un canto llamativo. Es la evolución de Poliwhirl cuando se le expone a una piedra agua."
+    ),
+    187:(
+        nombre : "Hoppip",
+        tipo1 : "planta",
+        tipo2 : "volador",
+        descripcion : "Hoppip es un Pokémon ligero que se transporta por el aire con el viento gracias a las hojas que tiene en su cuerpo."
+    ),
+    188:(
+        nombre : "Skiploom",
+        tipo1 : "planta",
+        tipo2 : "volador",
+        descripcion : "Skiploom es la evolución de Hoppip. Tiene más control sobre el viento, lo que le permite flotar con mayor facilidad."
+    ),
+    189:(
+        nombre : "Jumpluff",
+        tipo1 : "planta",
+        tipo2 : "volador",
+        descripcion : "Jumpluff es la evolución final de Hoppip. Su cuerpo extremadamente ligero le permite volar largas distancias impulsado por el viento."
+    ),
+    190:(
+        nombre : "Aipom",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Aipom es un Pokémon de aspecto travieso, que se caracteriza por su habilidad para trepar y su cola prensil que utiliza para sostenerse de los árboles."
+    ),
+    191:(
+        nombre : "Sunkern",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Sunkern es un pequeño Pokémon que se alimenta de la luz solar. Aunque es frágil, puede evolucionar a Sunflora si se le da una piedra solar."
+    ),
+    192:(
+        nombre : "Sunflora",
+        tipo1 : "planta",
+        tipo2 : "",
+        descripcion : "Sunflora es la evolución de Sunkern. Es un Pokémon que se energiza al absorber la luz solar, y sus pétalos brillan intensamente cuando está en plena salud."
+    ),
+    193:(
+        nombre : "Yanma",
+        tipo1 : "bicho",
+        tipo2 : "volador",
+        descripcion : "Yanma es un Pokémon insecto que tiene una gran velocidad en vuelo. Su habilidad para moverse ágilmente lo convierte en un excelente cazador de presas."
+    ),
+    194:(
+        nombre : "Wooper",
+        tipo1 : "agua",
+        tipo2 : "tierra",
+        descripcion : "Wooper es un Pokémon acuático de cuerpo blando. Vive en áreas húmedas y le gusta moverse lentamente por el agua, usando sus aletas como brazos."
+    ),
+    195:(
+        nombre : "Quagsire",
+        tipo1 : "agua",
+        tipo2 : "tierra",
+        descripcion : "Quagsire es la evolución de Wooper. Su cuerpo es más robusto y disfruta de nadar y caminar en los lodos, aprovechando sus habilidades acuáticas."
+    ),
+    196:(
+        nombre : "Espeon",
+        tipo1 : "psiquico",
+        tipo2 : "",
+        descripcion : "Espeon es una de las evoluciones de Eevee. Con un alto nivel de inteligencia y poderes psiquicos, se vincula estrechamente con su entrenador y tiene un vínculo emocional fuerte."
+    ),
+    197:(
+        nombre : "Umbreon",
+        tipo1 : "siniestro",
+        tipo2 : "",
+        descripcion : "Umbreon es otra evolución de Eevee. Este Pokémon nocturno utiliza su agudo sentido de la oscuridad para detectar peligros y sus habilidades siniestras para protegerse."
+    ),
+    198:(
+        nombre : "Murkrow",
+        tipo1 : "siniestro",
+        tipo2 : "volador",
+        descripcion : "Murkrow es un Pokémon que vuela de noche, conocido por sus travesuras y su actitud desafiante. Su plumaje oscuro es una característica distintiva."
+    ),
+    199:(
+        nombre : "Slowking",
+        tipo1 : "agua",
+        tipo2 : "psiquico",
+        descripcion : "Slowking es la evolución de Slowpoke. Es un Pokémon sabio y tranquilo, conocido por su capacidad para usar poderes psiquicos mientras nada por el agua."
+    ),
+    200:(
+        nombre : "Misdreavus",
+        tipo1 : "fantasma",
+        tipo2 : "",
+        descripcion : "Misdreavus es un Pokémon fantasmagórico que se alimenta del miedo de sus víctimas. Su presencia está relacionada con fenómenos paranormales."
+    ),
+    201:(
+        nombre : "Unown",
+        tipo1 : "psiquico",
+        tipo2 : "",
+        descripcion : "Unown es un Pokémon misterioso que se presenta en diversas formas que se asemejan a letras del alfabeto. Es un Pokémon de enigma y se cree que tiene habilidades psíquicas únicas."
+    ),
+    202:(
+        nombre : "Wobbuffet",
+        tipo1 : "psiquico",
+        tipo2 : "",
+        descripcion : "Wobbuffet es un Pokémon que se caracteriza por su paciencia y resistencia. Su habilidad principal es reflejar los ataques de su oponente, haciéndolo una especie de defensa viviente."
+    ),
+    203:(
+        nombre : "Girafarig",
+        tipo1 : "normal",
+        tipo2 : "psiquico",
+        descripcion : "Girafarig es un Pokémon que tiene una cola con una cabeza adicional. Se dice que tiene una naturaleza tímida y cautelosa, pero se defiende con su cola en situaciones de peligro."
+    ),
+    204:(
+        nombre : "Pineco",
+        tipo1 : "bicho",
+        tipo2 : "",
+        descripcion : "Pineco es un Pokémon insecto que se parece a una piña. Se mantiene inmóvil en árboles, esperando el momento adecuado para evolucionar y lanzar una defensa explosiva."
+    ),
+    205:(
+        nombre : "Forretress",
+        tipo1 : "bicho",
+        tipo2 : "acero",
+        descripcion : "Forretress es la evolución de Pineco. Con una armadura resistente, es capaz de defenderse eficazmente y utilizar sus pinchos como una potente defensa contra los atacantes."
+    ),
+    206:(
+        nombre : "Dunsparce",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Dunsparce es un Pokémon serpenteante que vive en túneles subterráneos. A pesar de su apariencia inofensiva, tiene la capacidad de moverse rápidamente y escapar de sus enemigos."
+    ),
+    207:(
+        nombre : "Gligar",
+        tipo1 : "tierra",
+        tipo2 : "volador",
+        descripcion : "Gligar es un Pokémon insecto volador que tiene grandes alas y puede deslizarse por el aire. Se enfrenta a sus oponentes con su agilidad y sus garras afiladas."
+    ),
+    208:(
+        nombre : "Steelix",
+        tipo1 : "acero",
+        tipo2 : "tierra",
+        descripcion : "Steelix es la evolución de Onix. Este Pokémon tiene un cuerpo hecho completamente de acero, lo que le otorga una gran resistencia y poder defensivo, así como una capacidad para excavar a gran velocidad."
+    ),
+    209:(
+        nombre : "Snubbull",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "Snubbull es un Pokémon de apariencia feroz, pero en realidad es muy leal y cariñoso. Su actitud intimidante es una forma de protegerse a sí mismo de otros Pokémon."
+    ),
+    210:(
+        nombre : "Granbull",
+        tipo1 : "hada",
+        tipo2 : "",
+        descripcion : "Granbull es la evolución de Snubbull. A pesar de su gran tamaño y su aspecto rudo, es un Pokémon que valora la amistad y tiene una actitud protectora con su entrenador."
+    ),
+    211:(
+        nombre : "Qwilfish",
+        tipo1 : "agua",
+        tipo2 : "veneno",
+        descripcion : "Qwilfish es un Pokémon que se caracteriza por sus espinas venenosas. Es un Pokémon ágil que se defiende lanzando estas espinas cuando se siente amenazado."
+    ),
+    212:(
+        nombre : "Scizor",
+        tipo1 : "acero",
+        tipo2 : "bicho",
+        descripcion : "Scizor es la evolución de Scyther, conocida por su agilidad y su cuerpo hecho de acero. Es un luchador formidable, especialmente con sus cuchillas que utiliza con gran destreza."
+    ),
+    213:(
+        nombre : "Shuckle",
+        tipo1 : "bicho",
+        tipo2 : "roca",
+        descripcion : "Shuckle es un Pokémon conocido por su defensa extremadamente alta. Su cuerpo tiene la forma de una concha, la cual lo protege de cualquier ataque. Es muy lento y pacífico."
+    ),
+    214:(
+        nombre : "Heracross",
+        tipo1 : "bicho",
+        tipo2 : "lucha",
+        descripcion : "Heracross es un Pokémon que se caracteriza por su fuerza y su cuerno en forma de garra. Es un luchador increíblemente fuerte, conocido por su habilidad para derribar grandes obstáculos."
+    ),
+    215:(
+        nombre : "Sneasel",
+        tipo1 : "siniestro",
+        tipo2 : "hielo",
+        descripcion : "Sneasel es un Pokémon astuto y ágil, que se mueve con rapidez y es capaz de atacar a sus oponentes con garras afiladas. Es conocido por su naturaleza traviesa."
+    ),
+    216:(
+        nombre : "Teddiursa",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Teddiursa es un Pokémon tierno y juguetón que se comporta como un osezno. Suele recolectar miel y descansar para reponer energías."
+    ),
+    217:(
+        nombre : "Ursaring",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Ursaring es la evolución de Teddiursa. Este poderoso Pokémon es conocido por su fuerza y su tamaño, siendo capaz de derribar árboles con facilidad."
+    ),
+    218:(
+        nombre : "Slugma",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Slugma es un Pokémon de lava que vive en ambientes volcánicos. Su cuerpo está formado por magma y puede cambiar de forma cuando su temperatura aumenta."
+    ),
+    219:(
+        nombre : "Magcargo",
+        tipo1 : "fuego",
+        tipo2 : "roca",
+        descripcion : "Magcargo es la evolución de Slugma. Este Pokémon es una combinación de magma y roca, lo que le da una apariencia única y una resistencia al fuego excepcional."
+    ),
+    220:(
+        nombre : "Swinub",
+        tipo1 : "hielo",
+        tipo2 : "tierra",
+        descripcion : "Swinub es un pequeño Pokémon que vive en climas fríos. Se guía utilizando su sentido del olfato, buscando raíces y alimentos bajo la nieve."
+    ),
+    221:(
+        nombre : "Piloswine",
+        tipo1 : "hielo",
+        tipo2 : "tierra",
+        descripcion : "Piloswine es la evolución de Swinub. Tiene un cuerpo robusto cubierto de grueso pelaje, y es conocido por su habilidad para excavar en la nieve y encontrar comida."
+    ),
+    222:(
+        nombre : "Corsola",
+        tipo1 : "agua",
+        tipo2 : "roca",
+        descripcion : "Corsola es un Pokémon que vive en los arrecifes de coral. Su cuerpo está cubierto por una estructura similar a un coral, y se le asocia con la protección del ecosistema marino."
+    ),
+    223:(
+        nombre : "Remoraid",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Remoraid es un Pokémon que se desplaza nadando a gran velocidad. Tiene la habilidad de disparar chorros de agua a sus presas para atraparlas, y se adapta bien a su entorno acuático."
+    ),
+    224:(
+        nombre : "Octillery",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Octillery es la evolución de Remoraid. Es conocido por su habilidad para disparar tinta como defensa y su destreza en combate bajo el agua."
+    ),
+    225:(
+        nombre : "Delibird",
+        tipo1 : "hielo",
+        tipo2 : "volador",
+        descripcion : "Delibird es un Pokémon que parece un pajarito de Navidad. Se encarga de entregar regalos y es muy conocido por su habilidad para repartir comida y provisiones a quienes lo necesitan."
+    ),
+    226:(
+        nombre : "Mantine",
+        tipo1 : "agua",
+        tipo2 : "volador",
+        descripcion : "Mantine es un Pokémon que se desplaza por el agua y por el cielo con gracia. Se alimenta de los peces que nada bajo las olas y suele formar una relación simbiótica con Remoraid."
+    ),
+    227:(
+        nombre : "Skarmory",
+        tipo1 : "acero",
+        tipo2 : "volador",
+        descripcion : "Skarmory es un Pokémon metálico que tiene alas de acero. Es conocido por su habilidad para volar a gran velocidad y por su coraza impenetrable."
+    ),
+    228:(
+        nombre : "Houndour",
+        tipo1 : "siniestro",
+        tipo2 : "fuego",
+        descripcion : "Houndour es un pequeño Pokémon de tipo fuego y siniestro, que se muestra feroz y leal a su manada. Suele vivir en lugares oscuros y difíciles de alcanzar."
+    ),
+    229:(
+        nombre : "Houndoom",
+        tipo1 : "siniestro",
+        tipo2 : "fuego",
+        descripcion : "Houndoom es la evolución de Houndour. Es un Pokémon temido por su fuerza y por sus ataques de fuego y siniestro, además de ser considerado un símbolo de maldad."
+    ),
+    230:(
+        nombre : "Kingdra",
+        tipo1 : "agua",
+        tipo2 : "dragon",
+        descripcion : "Kingdra es un Pokémon tipo agua y dragon, conocido por su velocidad y su capacidad para controlar las corrientes acuáticas. Tiene una apariencia de caballo marino con una cola serpenteante."
+    ),
+    231:(
+        nombre : "Phanpy",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Phanpy es un pequeño Pokémon tipo tierra que tiene la apariencia de un elefante bebé. Es muy fuerte para su tamaño y suele vivir en manadas."
+    ),
+    232:(
+        nombre : "Donphan",
+        tipo1 : "tierra",
+        tipo2 : "",
+        descripcion : "Donphan es la evolución de Phanpy. Es un Pokémon con un cuerpo robusto y una gran fuerza física, capaz de rodar rápidamente y embestir con su potente cuerpo."
+    ),
+    233:(
+        nombre : "Porygon2",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Porygon2 es una evolución de Porygon, un Pokémon digital que fue mejorado para ser más versátil y estable en los entornos virtuales."
+    ),
+    234:(
+        nombre : "Stantler",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Stantler es un Pokémon que tiene una apariencia similar a un ciervo. Se destaca por sus astas, las cuales pueden inducir a otros a entrar en un estado hipnótico con su brillo."
+    ),
+    235:(
+        nombre : "Smeargle",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Smeargle es un Pokémon pintor que utiliza su cola como pincel. Tiene la habilidad de copiar los movimientos de otros Pokémon, lo que lo convierte en un artista versátil."
+    ),
+    236:(
+        nombre : "Tyrogue",
+        tipo1 : "lucha",
+        tipo2 : "",
+        descripcion : "Tyrogue es un Pokémon pequeño y enérgico que está en constante entrenamiento para convertirse en un experto en combate. Su habilidad varía dependiendo de cómo entrene."
+    ),
+    237:(
+        nombre : "Hitmontop",
+        tipo1 : "lucha",
+        tipo2 : "",
+        descripcion : "Hitmontop es la evolución de Tyrogue, con una técnica de lucha única basada en girar sobre su cabeza. Es conocido por su agilidad y habilidad para realizar ataques giratorios."
+    ),
+    238:(
+        nombre : "Smoochum",
+        tipo1 : "hielo",
+        tipo2 : "psiquico",
+        descripcion : "Smoochum es un pequeño Pokémon de tipo hielo y psiquico, conocido por su actitud juguetona y su capacidad para usar ataques psiquicos desde temprana edad."
+    ),
+    239:(
+        nombre : "Elekid",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Elekid es un Pokémon electrico que tiene una gran carga de energía. Es muy inquieto y su cuerpo está lleno de energía estática."
+    ),
+    240:(
+        nombre : "Magby",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Magby es un Pokémon de tipo fuego que tiene una apariencia similar a un pequeño bebé Pokémon. Es conocido por su naturaleza explosiva y por ser el predecesor de Magmar."
+    ),
+    241:(
+        nombre : "Miltank",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Miltank es un Pokémon de tipo normal con apariencia de vaca. Es conocido por su habilidad de producir mucha leche y por su gran resistencia."
+    ),
+    242:(
+        nombre : "Blissey",
+        tipo1 : "normal",
+        tipo2 : "",
+        descripcion : "Blissey es un Pokémon de tipo normal que se especializa en la curación de otros Pokémon. Es conocido por su ternura y capacidad para hacer frente a los ataques con su salud elevada."
+    ),
+    243:(
+        nombre : "Raikou",
+        tipo1 : "electrico",
+        tipo2 : "",
+        descripcion : "Raikou es un Pokémon legendario de tipo electrico, conocido por representar el trueno. Tiene la habilidad de generar tormentas eléctricas con su fuerza."
+    ),
+    244:(
+        nombre : "Entei",
+        tipo1 : "fuego",
+        tipo2 : "",
+        descripcion : "Entei es un Pokémon legendario de tipo fuego, asociado con los volcanes. Es famoso por su fuerza y habilidad para provocar erupciones y terremotos."
+    ),
+    245:(
+        nombre : "Suicune",
+        tipo1 : "agua",
+        tipo2 : "",
+        descripcion : "Suicune es un Pokémon legendario de tipo agua, conocido por su capacidad para purificar el agua. Es asociado con la tranquilidad y la serenidad de los ríos y lagos."
+    ),
+    246:(
+        nombre : "Larvitar",
+        tipo1 : "roca",
+        tipo2 : "siniestro",
+        descripcion : "Larvitar es un Pokémon de tipo roca y siniestro, conocido por su naturaleza feroz. Es el primer paso en la evolución de Tyranitar, un Pokémon de gran poder."
+    ),
+    247:(
+        nombre : "Pupitar",
+        tipo1 : "roca",
+        tipo2 : "siniestro",
+        descripcion : "Pupitar es la forma intermedia de Larvitar antes de evolucionar a Tyranitar. Su cuerpo está cubierto de una dura capa, lo que lo protege mientras se desarrolla."
+    ),
+    248:(
+        nombre : "Tyranitar",
+        tipo1 : "roca",
+        tipo2 : "siniestro",
+        descripcion : "Tyranitar es un Pokémon poderoso de tipo roca y siniestro, con una gran fortaleza. Se dice que puede crear tormentas cuando entra en combate debido a su energía desbordante."
+    ),
+    249:(
+        nombre : "Lugia",
+        tipo1 : "psiquico",
+        tipo2 : "volador",
+        descripcion : "Lugia es un Pokémon legendario de tipo psiquico y volador, conocido como el guardián de los mares. Es muy poderoso, capaz de controlar el viento y las tormentas."
+    ),
+    250:(
+        nombre : "Ho-Oh",
+        tipo1 : "fuego",
+        tipo2 : "volador",
+        descripcion : "Ho-Oh es un Pokémon legendario de tipo fuego y volador. Es conocido por su belleza y poder, y se dice que trae la buena suerte a aquellos que lo ven."
+    ),
+    251:(
+        nombre : "Celebi",
+        tipo1 : "psiquico",
+        tipo2 : "planta",
+        descripcion : "Celebi es un Pokémon legendario de tipo psiquico y planta, conocido como el guardián del bosque. Tiene la habilidad de viajar a través del tiempo y es símbolo de la esperanza."
+    )
+)
