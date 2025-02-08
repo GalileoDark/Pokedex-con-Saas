@@ -49,35 +49,30 @@
             <!-- Menú con opciones -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-
-
-                    <!-- Opción 2 con Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
+                            Tipos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
-                            <li><a class="dropdown-item" href="#">Consultoría</a></li>
-                            <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=acero">Acero</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=agua">Agua</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=bicho">Bicho</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=dragon">Dragon</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=electrico">Electrico</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=fantasma">Fantasma</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=fuego">Fuego</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=hada">Hada</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=hielo">Hielo</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=lucha">Lucha</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=normal">Normal</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=planta">Planta</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=psiquico">Psiquico</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=roca">Roca</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=siniestro">Siniestro</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=tierra">Tierra</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=veneno">Veneno</a></li>
+                            <li><a class="dropdown-item" href="detalles.php?allTipos=volador">Volador</a></li>
                         </ul>
-                    </li>
-
-                    <!-- Opción 3 con Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Acerca de
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="#">Nuestra Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Nuestro Equipo</a></li>
-                            <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Opción 4 -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
 
@@ -91,7 +86,6 @@
         <?php
         for ($i = 1; $i <= 251 ; $i++) {
             echo "<div class='item".$i."'>
-                    
                     <table>
                         <tr>
                             <td class='nombre".$i."' colspan='4'></td>
