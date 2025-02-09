@@ -62,7 +62,13 @@ body {
         "tipos tipos descripcion descripcion";
     text-align: center ;
 }
-
+.contenedorTipo{
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 2%;
+}
 table{
     height: 100%;
     width: 100%;

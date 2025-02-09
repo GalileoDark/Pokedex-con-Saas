@@ -57,6 +57,14 @@ body {
   text-align: center;
 }
 
+.contenedorTipo {
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+  gap: 10px; /* Espaciado entre divs */
+  margin: 2%;
+}
+
 table {
   height: 100%;
   width: 100%;
@@ -1505,7 +1513,7 @@ table {
 }
 
 .item15 {
-  background: linear-gradient(to right, #95c799 0%, #95c799 40%, #c5e2f6 60%, #c5e2f6 100%);
+  background: linear-gradient(to right, #95c799 0%, #95c799 40%, #8f4e8f 60%, #8f4e8f 100%);
   text-align: center;
   border: 1px solid #000;
   border-radius: 10px;
@@ -1537,7 +1545,7 @@ table {
 }
 
 .tipo215::after {
-  content: url("../tipo/volador.png");
+  content: url("../tipo/veneno.png");
 }
 
 .descripcion15::after {
@@ -25298,7 +25306,7 @@ table {
 }
 
 .item246 {
-  background: linear-gradient(to right, #a78361 0%, #a78361 40%, #292929 60%, #292929 100%);
+  background: linear-gradient(to right, #a78361 0%, #a78361 40%, #f5deb3 60%, #f5deb3 100%);
   text-align: center;
   border: 1px solid #000;
   border-radius: 10px;
@@ -25330,7 +25338,7 @@ table {
 }
 
 .tipo2246::after {
-  content: url("../tipo/siniestro.png");
+  content: url("../tipo/tierra.png");
 }
 
 .descripcion246::after {
@@ -25401,7 +25409,7 @@ table {
 }
 
 .item247 {
-  background: linear-gradient(to right, #a78361 0%, #a78361 40%, #292929 60%, #292929 100%);
+  background: linear-gradient(to right, #a78361 0%, #a78361 40%, #f5deb3 60%, #f5deb3 100%);
   text-align: center;
   border: 1px solid #000;
   border-radius: 10px;
@@ -25433,7 +25441,7 @@ table {
 }
 
 .tipo2247::after {
-  content: url("../tipo/siniestro.png");
+  content: url("../tipo/tierra.png");
 }
 
 .descripcion247::after {
