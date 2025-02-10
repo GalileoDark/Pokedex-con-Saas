@@ -12,19 +12,6 @@
 
     <!-- Incluye el JS de Bootstrap (necesario para el dropdown) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .contenedor {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
-            gap: 10px; /* Espaciado entre divs */
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        table{
-            height: 100%;
-            width: 100%;
-        }
-    </style>
     <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport"

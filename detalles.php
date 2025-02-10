@@ -36,17 +36,29 @@
             <!-- Menú con opciones -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-
-
-                    <!-- Opción 2 con Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Tipos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
-                            <li><a class="dropdown-item" href="#">Consultoría</a></li>
-                            <li><a class="dropdown-item" href="#">Marketing Digital</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=acero">Acero</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=agua">Agua</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=bicho">Bicho</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=dragon">Dragon</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=electrico">Electrico</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=fantasma">Fantasma</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=fuego">Fuego</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=hada">Hada</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=hielo">Hielo</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=lucha">Lucha</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=normal">Normal</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=planta">Planta</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=psiquico">Psiquico</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=roca">Roca</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=siniestro">Siniestro</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=tierra">Tierra</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=veneno">Veneno</a></li>
+                            <li><a class="dropdown-item" href="tipos.php?allTipos=volador">Volador</a></li>
                         </ul>
                     </li>
                 </ul>
