@@ -61,38 +61,104 @@ body {
 }
 
 /* Las media Query */
-/* El contenedor del index*/
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
-  gap: 10px; /* Espaciado entre divs */
-  margin: 5%;
+@media screen {
+  /* Para PC (1025px en adelante) */
+  /* Para Tabletas (768px a 1024px) */
+  /* Para Teléfonos (hasta 767px) */
 }
-
-/* El Grid de la pagina de la descripción */
-.contenedorDescripcion {
-  background-image: url("../img/background1.png");
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  padding-left: 2%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto; /* Dos filas ajustables */
-  gap: 10px; /* Espaciado entre divs */
-  margin: 10%;
-  grid-template-areas: "numeroPokedex nombre nombre nombre" "imagen imagen descripcion descripcion" "tipos tipos descripcion descripcion";
-  text-align: center;
+@media screen and (min-width: 1025px) {
+  /* El contenedor del index*/
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 5%;
+  }
+  /* El Grid de la pagina de la descripción */
+  .contenedorDescripcion {
+    background-image: url("../img/background1.png");
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto; /* Dos filas ajustables */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 10%;
+    grid-template-areas: "numeroPokedex nombre nombre nombre" "imagen imagen descripcion descripcion" "tipos tipos descripcion descripcion";
+    text-align: center;
+  }
+  /* El grid de los tipos */
+  .contenedorTipo {
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 2%;
+  }
 }
-
-/* El grid de los tipos */
-.contenedorTipo {
-  padding-top: 1%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
-  gap: 10px; /* Espaciado entre divs */
-  margin: 2%;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* El contenedor del index*/
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 5%;
+  }
+  /* El Grid de la pagina de la descripción */
+  .contenedorDescripcion {
+    background-image: url("../img/background1.png");
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto; /* 4 filas ajustables */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 10%;
+    grid-template-areas: "numeroPokedex nombre" "imagen imagen" "descripcion descripcion" "tipos tipos";
+    text-align: center;
+  }
+  /* El grid de los tipos */
+  .contenedorTipo {
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 2%;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  /* El contenedor del index*/
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 5%;
+  }
+  /* El Grid de la pagina de la descripción */
+  .contenedorDescripcion {
+    background-image: url("../img/background1.png");
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto auto; /* 5 filas ajustables */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 10%;
+    grid-template-areas: "numeroPokedex " "nombre" "imagen" "descripcion" "tipos";
+    text-align: center;
+  }
+  /* El grid de los tipos */
+  .contenedorTipo {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columnas automáticas */
+    gap: 10px; /* Espaciado entre divs */
+    margin: 2%;
+  }
+}
 table {
   height: 100%;
   width: 100%;
@@ -111,7 +177,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item1:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item1:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen1::after {
@@ -218,7 +288,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item2:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item2:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen2::after {
@@ -325,7 +399,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item3:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item3:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen3::after {
@@ -432,7 +510,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item4:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item4:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen4::after {
@@ -539,7 +621,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item5:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item5:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen5::after {
@@ -646,7 +732,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item6:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item6:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen6::after {
@@ -753,7 +843,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item7:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item7:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen7::after {
@@ -860,7 +954,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item8:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item8:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen8::after {
@@ -967,7 +1065,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item9:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item9:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen9::after {
@@ -1074,7 +1176,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item10:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item10:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen10::after {
@@ -1181,7 +1287,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item11:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item11:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen11::after {
@@ -1288,7 +1398,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item12:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item12:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen12::after {
@@ -1395,7 +1509,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item13:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item13:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen13::after {
@@ -1502,7 +1620,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item14:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item14:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen14::after {
@@ -1609,7 +1731,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item15:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item15:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen15::after {
@@ -1716,7 +1842,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item16:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item16:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen16::after {
@@ -1823,7 +1953,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item17:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item17:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen17::after {
@@ -1930,7 +2064,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item18:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item18:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen18::after {
@@ -2037,7 +2175,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item19:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item19:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen19::after {
@@ -2144,7 +2286,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item20:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item20:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen20::after {
@@ -2251,7 +2397,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item21:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item21:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen21::after {
@@ -2358,7 +2508,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item22:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item22:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen22::after {
@@ -2465,7 +2619,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item23:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item23:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen23::after {
@@ -2572,7 +2730,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item24:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item24:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen24::after {
@@ -2679,7 +2841,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item25:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item25:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen25::after {
@@ -2786,7 +2952,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item26:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item26:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen26::after {
@@ -2893,7 +3063,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item27:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item27:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen27::after {
@@ -3000,7 +3174,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item28:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item28:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen28::after {
@@ -3107,7 +3285,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item29:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item29:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen29::after {
@@ -3214,7 +3396,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item30:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item30:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen30::after {
@@ -3321,7 +3507,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item31:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item31:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen31::after {
@@ -3428,7 +3618,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item32:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item32:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen32::after {
@@ -3535,7 +3729,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item33:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item33:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen33::after {
@@ -3642,7 +3840,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item34:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item34:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen34::after {
@@ -3749,7 +3951,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item35:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item35:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen35::after {
@@ -3856,7 +4062,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item36:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item36:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen36::after {
@@ -3963,7 +4173,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item37:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item37:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen37::after {
@@ -4070,7 +4284,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item38:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item38:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen38::after {
@@ -4177,7 +4395,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item39:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item39:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen39::after {
@@ -4284,7 +4506,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item40:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item40:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen40::after {
@@ -4391,7 +4617,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item41:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item41:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen41::after {
@@ -4498,7 +4728,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item42:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item42:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen42::after {
@@ -4605,7 +4839,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item43:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item43:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen43::after {
@@ -4712,7 +4950,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item44:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item44:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen44::after {
@@ -4819,7 +5061,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item45:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item45:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen45::after {
@@ -4926,7 +5172,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item46:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item46:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen46::after {
@@ -5033,7 +5283,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item47:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item47:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen47::after {
@@ -5140,7 +5394,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item48:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item48:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen48::after {
@@ -5247,7 +5505,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item49:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item49:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen49::after {
@@ -5354,7 +5616,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item50:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item50:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen50::after {
@@ -5461,7 +5727,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item51:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item51:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen51::after {
@@ -5568,7 +5838,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item52:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item52:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen52::after {
@@ -5675,7 +5949,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item53:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item53:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen53::after {
@@ -5782,7 +6060,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item54:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item54:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen54::after {
@@ -5889,7 +6171,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item55:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item55:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen55::after {
@@ -5996,7 +6282,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item56:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item56:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen56::after {
@@ -6103,7 +6393,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item57:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item57:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen57::after {
@@ -6210,7 +6504,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item58:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item58:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen58::after {
@@ -6317,7 +6615,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item59:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item59:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen59::after {
@@ -6424,7 +6726,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item60:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item60:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen60::after {
@@ -6531,7 +6837,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item61:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item61:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen61::after {
@@ -6638,7 +6948,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item62:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item62:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen62::after {
@@ -6745,7 +7059,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item63:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item63:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen63::after {
@@ -6852,7 +7170,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item64:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item64:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen64::after {
@@ -6959,7 +7281,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item65:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item65:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen65::after {
@@ -7066,7 +7392,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item66:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item66:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen66::after {
@@ -7173,7 +7503,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item67:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item67:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen67::after {
@@ -7280,7 +7614,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item68:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item68:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen68::after {
@@ -7387,7 +7725,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item69:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item69:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen69::after {
@@ -7494,7 +7836,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item70:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item70:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen70::after {
@@ -7601,7 +7947,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item71:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item71:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen71::after {
@@ -7708,7 +8058,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item72:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item72:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen72::after {
@@ -7815,7 +8169,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item73:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item73:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen73::after {
@@ -7922,7 +8280,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item74:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item74:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen74::after {
@@ -8029,7 +8391,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item75:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item75:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen75::after {
@@ -8136,7 +8502,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item76:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item76:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen76::after {
@@ -8243,7 +8613,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item77:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item77:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen77::after {
@@ -8350,7 +8724,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item78:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item78:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen78::after {
@@ -8457,7 +8835,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item79:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item79:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen79::after {
@@ -8564,7 +8946,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item80:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item80:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen80::after {
@@ -8671,7 +9057,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item81:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item81:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen81::after {
@@ -8778,7 +9168,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item82:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item82:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen82::after {
@@ -8885,7 +9279,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item83:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item83:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen83::after {
@@ -8992,7 +9390,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item84:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item84:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen84::after {
@@ -9099,7 +9501,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item85:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item85:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen85::after {
@@ -9206,7 +9612,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item86:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item86:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen86::after {
@@ -9313,7 +9723,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item87:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item87:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen87::after {
@@ -9420,7 +9834,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item88:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item88:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen88::after {
@@ -9527,7 +9945,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item89:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item89:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen89::after {
@@ -9634,7 +10056,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item90:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item90:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen90::after {
@@ -9741,7 +10167,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item91:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item91:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen91::after {
@@ -9848,7 +10278,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item92:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item92:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen92::after {
@@ -9955,7 +10389,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item93:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item93:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen93::after {
@@ -10062,7 +10500,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item94:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item94:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen94::after {
@@ -10169,7 +10611,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item95:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item95:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen95::after {
@@ -10276,7 +10722,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item96:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item96:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen96::after {
@@ -10383,7 +10833,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item97:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item97:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen97::after {
@@ -10490,7 +10944,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item98:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item98:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen98::after {
@@ -10597,7 +11055,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item99:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item99:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen99::after {
@@ -10704,7 +11166,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item100:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item100:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen100::after {
@@ -10811,7 +11277,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item101:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item101:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen101::after {
@@ -10918,7 +11388,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item102:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item102:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen102::after {
@@ -11025,7 +11499,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item103:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item103:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen103::after {
@@ -11132,7 +11610,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item104:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item104:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen104::after {
@@ -11239,7 +11721,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item105:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item105:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen105::after {
@@ -11346,7 +11832,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item106:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item106:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen106::after {
@@ -11453,7 +11943,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item107:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item107:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen107::after {
@@ -11560,7 +12054,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item108:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item108:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen108::after {
@@ -11667,7 +12165,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item109:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item109:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen109::after {
@@ -11774,7 +12276,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item110:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item110:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen110::after {
@@ -11881,7 +12387,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item111:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item111:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen111::after {
@@ -11988,7 +12498,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item112:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item112:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen112::after {
@@ -12095,7 +12609,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item113:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item113:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen113::after {
@@ -12202,7 +12720,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item114:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item114:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen114::after {
@@ -12309,7 +12831,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item115:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item115:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen115::after {
@@ -12416,7 +12942,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item116:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item116:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen116::after {
@@ -12523,7 +13053,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item117:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item117:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen117::after {
@@ -12630,7 +13164,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item118:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item118:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen118::after {
@@ -12737,7 +13275,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item119:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item119:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen119::after {
@@ -12844,7 +13386,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item120:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item120:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen120::after {
@@ -12951,7 +13497,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item121:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item121:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen121::after {
@@ -13058,7 +13608,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item122:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item122:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen122::after {
@@ -13165,7 +13719,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item123:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item123:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen123::after {
@@ -13272,7 +13830,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item124:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item124:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen124::after {
@@ -13379,7 +13941,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item125:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item125:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen125::after {
@@ -13486,7 +14052,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item126:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item126:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen126::after {
@@ -13593,7 +14163,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item127:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item127:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen127::after {
@@ -13700,7 +14274,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item128:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item128:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen128::after {
@@ -13807,7 +14385,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item129:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item129:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen129::after {
@@ -13914,7 +14496,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item130:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item130:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen130::after {
@@ -14021,7 +14607,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item131:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item131:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen131::after {
@@ -14128,7 +14718,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item132:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item132:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen132::after {
@@ -14235,7 +14829,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item133:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item133:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen133::after {
@@ -14342,7 +14940,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item134:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item134:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen134::after {
@@ -14449,7 +15051,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item135:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item135:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen135::after {
@@ -14556,7 +15162,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item136:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item136:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen136::after {
@@ -14663,7 +15273,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item137:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item137:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen137::after {
@@ -14770,7 +15384,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item138:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item138:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen138::after {
@@ -14877,7 +15495,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item139:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item139:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen139::after {
@@ -14984,7 +15606,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item140:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item140:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen140::after {
@@ -15091,7 +15717,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item141:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item141:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen141::after {
@@ -15198,7 +15828,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item142:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item142:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen142::after {
@@ -15305,7 +15939,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item143:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item143:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen143::after {
@@ -15412,7 +16050,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item144:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item144:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen144::after {
@@ -15519,7 +16161,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item145:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item145:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen145::after {
@@ -15626,7 +16272,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item146:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item146:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen146::after {
@@ -15733,7 +16383,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item147:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item147:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen147::after {
@@ -15840,7 +16494,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item148:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item148:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen148::after {
@@ -15947,7 +16605,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item149:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item149:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen149::after {
@@ -16054,7 +16716,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item150:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item150:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen150::after {
@@ -16161,7 +16827,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item151:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item151:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen151::after {
@@ -16268,7 +16938,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item152:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item152:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen152::after {
@@ -16375,7 +17049,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item153:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item153:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen153::after {
@@ -16482,7 +17160,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item154:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item154:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen154::after {
@@ -16589,7 +17271,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item155:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item155:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen155::after {
@@ -16696,7 +17382,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item156:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item156:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen156::after {
@@ -16803,7 +17493,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item157:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item157:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen157::after {
@@ -16910,7 +17604,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item158:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item158:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen158::after {
@@ -17017,7 +17715,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item159:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item159:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen159::after {
@@ -17124,7 +17826,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item160:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item160:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen160::after {
@@ -17231,7 +17937,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item161:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item161:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen161::after {
@@ -17338,7 +18048,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item162:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item162:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen162::after {
@@ -17445,7 +18159,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item163:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item163:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen163::after {
@@ -17552,7 +18270,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item164:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item164:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen164::after {
@@ -17659,7 +18381,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item165:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item165:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen165::after {
@@ -17766,7 +18492,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item166:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item166:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen166::after {
@@ -17873,7 +18603,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item167:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item167:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen167::after {
@@ -17980,7 +18714,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item168:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item168:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen168::after {
@@ -18087,7 +18825,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item169:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item169:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen169::after {
@@ -18194,7 +18936,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item170:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item170:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen170::after {
@@ -18301,7 +19047,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item171:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item171:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen171::after {
@@ -18408,7 +19158,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item172:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item172:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen172::after {
@@ -18515,7 +19269,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item173:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item173:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen173::after {
@@ -18622,7 +19380,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item174:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item174:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen174::after {
@@ -18729,7 +19491,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item175:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item175:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen175::after {
@@ -18836,7 +19602,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item176:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item176:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen176::after {
@@ -18943,7 +19713,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item177:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item177:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen177::after {
@@ -19050,7 +19824,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item178:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item178:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen178::after {
@@ -19157,7 +19935,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item179:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item179:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen179::after {
@@ -19264,7 +20046,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item180:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item180:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen180::after {
@@ -19371,7 +20157,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item181:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item181:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen181::after {
@@ -19478,7 +20268,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item182:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item182:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen182::after {
@@ -19585,7 +20379,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item183:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item183:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen183::after {
@@ -19692,7 +20490,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item184:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item184:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen184::after {
@@ -19799,7 +20601,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item185:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item185:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen185::after {
@@ -19906,7 +20712,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item186:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item186:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen186::after {
@@ -20013,7 +20823,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item187:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item187:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen187::after {
@@ -20120,7 +20934,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item188:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item188:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen188::after {
@@ -20227,7 +21045,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item189:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item189:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen189::after {
@@ -20334,7 +21156,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item190:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item190:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen190::after {
@@ -20441,7 +21267,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item191:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item191:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen191::after {
@@ -20548,7 +21378,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item192:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item192:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen192::after {
@@ -20655,7 +21489,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item193:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item193:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen193::after {
@@ -20762,7 +21600,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item194:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item194:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen194::after {
@@ -20869,7 +21711,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item195:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item195:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen195::after {
@@ -20976,7 +21822,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item196:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item196:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen196::after {
@@ -21083,7 +21933,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item197:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item197:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen197::after {
@@ -21190,7 +22044,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item198:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item198:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen198::after {
@@ -21297,7 +22155,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item199:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item199:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen199::after {
@@ -21404,7 +22266,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item200:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item200:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen200::after {
@@ -21511,7 +22377,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item201:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item201:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen201::after {
@@ -21618,7 +22488,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item202:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item202:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen202::after {
@@ -21725,7 +22599,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item203:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item203:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen203::after {
@@ -21832,7 +22710,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item204:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item204:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen204::after {
@@ -21939,7 +22821,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item205:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item205:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen205::after {
@@ -22046,7 +22932,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item206:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item206:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen206::after {
@@ -22153,7 +23043,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item207:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item207:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen207::after {
@@ -22260,7 +23154,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item208:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item208:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen208::after {
@@ -22367,7 +23265,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item209:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item209:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen209::after {
@@ -22474,7 +23376,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item210:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item210:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen210::after {
@@ -22581,7 +23487,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item211:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item211:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen211::after {
@@ -22688,7 +23598,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item212:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item212:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen212::after {
@@ -22795,7 +23709,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item213:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item213:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen213::after {
@@ -22902,7 +23820,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item214:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item214:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen214::after {
@@ -23009,7 +23931,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item215:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item215:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen215::after {
@@ -23116,7 +24042,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item216:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item216:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen216::after {
@@ -23223,7 +24153,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item217:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item217:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen217::after {
@@ -23330,7 +24264,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item218:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item218:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen218::after {
@@ -23437,7 +24375,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item219:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item219:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen219::after {
@@ -23544,7 +24486,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item220:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item220:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen220::after {
@@ -23651,7 +24597,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item221:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item221:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen221::after {
@@ -23758,7 +24708,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item222:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item222:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen222::after {
@@ -23865,7 +24819,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item223:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item223:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen223::after {
@@ -23972,7 +24930,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item224:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item224:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen224::after {
@@ -24079,7 +25041,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item225:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item225:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen225::after {
@@ -24186,7 +25152,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item226:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item226:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen226::after {
@@ -24293,7 +25263,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item227:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item227:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen227::after {
@@ -24400,7 +25374,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item228:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item228:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen228::after {
@@ -24507,7 +25485,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item229:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item229:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen229::after {
@@ -24614,7 +25596,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item230:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item230:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen230::after {
@@ -24721,7 +25707,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item231:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item231:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen231::after {
@@ -24828,7 +25818,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item232:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item232:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen232::after {
@@ -24935,7 +25929,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item233:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item233:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen233::after {
@@ -25042,7 +26040,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item234:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item234:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen234::after {
@@ -25149,7 +26151,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item235:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item235:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen235::after {
@@ -25256,7 +26262,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item236:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item236:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen236::after {
@@ -25363,7 +26373,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item237:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item237:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen237::after {
@@ -25470,7 +26484,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item238:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item238:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen238::after {
@@ -25577,7 +26595,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item239:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item239:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen239::after {
@@ -25684,7 +26706,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item240:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item240:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen240::after {
@@ -25791,7 +26817,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item241:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item241:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen241::after {
@@ -25898,7 +26928,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item242:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item242:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen242::after {
@@ -26005,7 +27039,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item243:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item243:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen243::after {
@@ -26112,7 +27150,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item244:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item244:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen244::after {
@@ -26219,7 +27261,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item245:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item245:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen245::after {
@@ -26326,7 +27372,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item246:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item246:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen246::after {
@@ -26433,7 +27483,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item247:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item247:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen247::after {
@@ -26540,7 +27594,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item248:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item248:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen248::after {
@@ -26647,7 +27705,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item249:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item249:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen249::after {
@@ -26754,7 +27816,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item250:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item250:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen250::after {
@@ -26861,7 +27927,11 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
 }
 
 .item251:hover {
-  scale: 1.1;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.item251:hover:hover {
+  transform: scale(1.1);
 }
 
 .imagen251::after {

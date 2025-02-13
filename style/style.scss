@@ -58,41 +58,122 @@ body {
     background-image: url("../img/background1.png");
 }
 /* Las media Query */
+
 @media screen {
-    
+    /* Para PC (1025px en adelante) */
+@media (min-width: 1025px) {
+    /* El contenedor del index*/
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 5%
+    }
+    /* El Grid de la pagina de la descripción */
+    .contenedorDescripcion{
+        background-image: url('../img/background1.png');
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding-left: 2%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto; /* Dos filas ajustables */
+        gap: 10px; /* Espaciado entre divs */
+        margin : 10%;
+        grid-template-areas:
+            "numeroPokedex nombre nombre nombre"
+            "imagen imagen descripcion descripcion"
+            "tipos tipos descripcion descripcion";
+        text-align: center ;
+    }
+    /* El grid de los tipos */
+    .contenedorTipo{
+        padding-top: 1%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 2%;
+    }
 }
-/* El contenedor del index*/
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
-    gap: 10px; /* Espaciado entre divs */
-    margin: 5%
+
+/* Para Tabletas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* El contenedor del index*/
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 5%
+    }
+    /* El Grid de la pagina de la descripción */
+    .contenedorDescripcion{
+        background-image: url('../img/background1.png');
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto; /* 4 filas ajustables */
+        gap: 10px; /* Espaciado entre divs */
+        margin : 10%;
+        grid-template-areas:
+            "numeroPokedex nombre"
+            "imagen imagen"
+            "descripcion descripcion"
+            "tipos tipos";
+        text-align: center ;
+    }
+    /* El grid de los tipos */
+    .contenedorTipo{
+        padding: 1%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 2%;
+    }
 }
-/* El Grid de la pagina de la descripción */
-.contenedorDescripcion{
-    background-image: url('../img/background1.png');
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    padding-left: 2%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto; /* Dos filas ajustables */
-    gap: 10px; /* Espaciado entre divs */
-    margin : 10%;
-    grid-template-areas:
-        "numeroPokedex nombre nombre nombre"
-        "imagen imagen descripcion descripcion"
-        "tipos tipos descripcion descripcion";
-    text-align: center ;
+
+/* Para Teléfonos (hasta 767px) */
+@media (max-width: 767px) {
+    /* El contenedor del index*/
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 5%
+    }
+    /* El Grid de la pagina de la descripción */
+    .contenedorDescripcion{
+        background-image: url('../img/background1.png');
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto auto auto auto; /* 5 filas ajustables */
+        gap: 10px; /* Espaciado entre divs */
+        margin : 10%;
+        grid-template-areas:
+            "numeroPokedex "
+            "nombre"
+            "imagen"
+            "descripcion"
+            "tipos";
+        text-align: center ;
+    }
+    /* El grid de los tipos */
+    .contenedorTipo{
+        padding: 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 columnas automáticas */
+        gap: 10px; /* Espaciado entre divs */
+        margin: 2%;
+    }
 }
-/* El grid de los tipos */
-.contenedorTipo{
-    padding-top: 1%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas automáticas */
-    gap: 10px; /* Espaciado entre divs */
-    margin: 2%;
+
 }
+
+
 
 table{
     height: 100%;
@@ -119,7 +200,12 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     }
     .item#{$i}:hover{
-        scale: 1.1;
+        will-change: transform; // Optimización para navegadores
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+    
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     .imagen#{$i}::after {
         content: url('../img/#{$i}.png');
@@ -160,7 +246,7 @@ Pero en general, este bucle lo que hace es introducir las imagenes, el texto, el
     }
 
     .tipo1#{$i}::after{
-        content: url('../tipo/#{map-get(map-get(datos.$datos, $i), tipo1)}.png');
+        content:  url('../tipo/#{map-get(map-get(datos.$datos, $i), tipo1)}.png');
         object-fit: cover;
     }
     .tipo2#{$i}::after{

@@ -150,7 +150,6 @@ $ids = [];
             localStorage.setItem("modo", "diurno");
         }
     });
-
 </script>
 </body>
 </html>
